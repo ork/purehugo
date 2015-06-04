@@ -17,6 +17,16 @@
                     <a class="pure-button" href="https://github.com/{{ . }} "><i class="fa fa-github-alt"></i> github</a>
                 </li>
                 {{ end }}
+                {{ with .Site.Params.pinboard }}
+                <li class="nav-item">
+                    <a class="pure-button" href="https://pinboard.in/u:{{ . }} "><i class="fa fa-thumb-tack"></i> pinboard</a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.linkedin}}
+                <li class="nav-item">
+                    <a class="pure-button" href="https://linkedin.com/in/{{ . }} "><i class="fa fa-linkedin"></i> linkedin</a>
+                </li>
+                {{ end }}
                 <li class="nav-item">
                     <a class="pure-button" href="/index.xml"><i class="fa fa-rss"></i> rss</a>
                 </li>
